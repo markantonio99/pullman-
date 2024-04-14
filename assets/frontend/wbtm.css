@@ -1,0 +1,139 @@
+.wbtm-bus-flix-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--color_light);
+  border: 1px solid var(--color_border);
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: sans-serif;
+}
+@media (min-width: 1024px) {
+  .wbtm-bus-flix-style {
+    flex-direction: row;
+  }
+}
+.wbtm-bus-flix-style .title {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .wbtm-bus-flix-style .title {
+    width: 12%;
+  }
+}
+.wbtm-bus-flix-style .title span {
+  padding: 0 8px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: var(--color_theme_cc);
+  font-size: 11px;
+  line-height: 2;
+}
+.wbtm-bus-flix-style .route {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .wbtm-bus-flix-style .route {
+    width: 45%;
+  }
+}
+.wbtm-bus-flix-style .route .route-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+  align-items: center;
+  margin: 14px 0;
+}
+.wbtm-bus-flix-style .route .route-info .from,
+.wbtm-bus-flix-style .route .route-info .to {
+  width: 45%;
+}
+@media (min-width: 540px) {
+  .wbtm-bus-flix-style .route .route-info .from,
+  .wbtm-bus-flix-style .route .route-info .to {
+    width: 25%;
+  }
+}
+.wbtm-bus-flix-style .route .route-info .to {
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  .wbtm-bus-flix-style .route .route-info .to {
+    padding-left: 20px;
+  }
+}
+.wbtm-bus-flix-style .route .route-info .duration {
+  border-bottom: 3px solid var(--d_color);
+  width: 65%;
+  position: relative;
+}
+.wbtm-bus-flix-style .route .route-info .duration .time {
+  background: var(--color_light);
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 5px;
+}
+.wbtm-bus-flix-style .feature {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.wbtm-bus-flix-style .feature .items {
+  padding: 2px 8px;
+  border-radius: 50px;
+}
+
+.pickup-point,
+.drop-off-point {
+  margin-left: 8px;
+  border-left: 1px solid;
+  flex-direction: column;
+}
+.pickup-point .point,
+.drop-off-point .point {
+  margin-left: -0.57em;
+  padding: 15px 0;
+}
+.pickup-point .point:first-child,
+.drop-off-point .point:first-child {
+  padding-top: 21px;
+}
+.pickup-point .point:last-child,
+.drop-off-point .point:last-child {
+  padding-bottom: 0;
+  line-height: 0;
+  margin-bottom: 24px;
+}
+
+.wbtm_selected_seat_details table tbody tr:nth-child(2n+1) {
+  background: #fff;
+}
+.wbtm_selected_seat_details table tr:hover {
+  background-color: #fff;
+}
+.wbtm_selected_seat_details table tbody tr:nth-child(2n+1) {
+  background: none;
+}
+
+.wbtm_ex_service_area table tbody tr:nth-child(2n+1) {
+  background: none;
+}
+.wbtm_ex_service_area table tr:nth-child(2n) {
+  background: none;
+}
+
+.wbtm-seat-book.hide {
+  display: none;
+}
+
+/*# sourceMappingURL=wbtm.css.map */
